@@ -1,0 +1,9 @@
+MegaNostalgia - A Sega Mega Drive game console emulator
+
+This emulator is still under heavy development and is not yet useful.
+
+Useful resources:
+
+Sega Genesis ROM format - https://github.com/franckverrot/EmulationResources/blob/master/consoles/megadrive/genesis_rom.txt
+Sega Mega Drive 68k memory map - https://segaretro.org/Sega_Mega_Drive/Memory_map
+Z80 memory map - https://md.railgun.works/index.php?title=Zilog_Z80
