@@ -21,9 +21,13 @@ public:
 
     unsigned short m68kRead16Bit(uint32_t location);
 
+    uint32_t m68kRead32Bit(uint32_t location);
+
     void m68kWrite(uint32_t location, unsigned char value);
 
     void m68kWrite(uint32_t location, unsigned short value);
+
+    void m68kWrite(uint32_t location, uint32_t value);
 
     void z80Write(uint16_t location, unsigned char value);
 

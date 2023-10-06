@@ -415,6 +415,10 @@ unsigned short Memory::m68kRead16Bit(uint32_t location) {
     return (m68kRead(location) << 8) + m68kRead(location+1);
 }
 
+uint32_t Memory::m68kRead32Bit(uint32_t location) {
+    return (m68kRead(location) << 24) + (m68kRead(location+1) << 16) + (m68kRead(location+2) << 8) + m68kRead(location + 3);
+}
+
 void Memory::m68kWrite(uint32_t location, unsigned char value) {
     // TODO simplify this function when I've determined which parts of memory are write only
     // TODO could also be refactored to be more performant, currently writing it to make the memory map easy to understand
@@ -682,4 +686,11 @@ void Memory::m68kWrite(uint32_t location, unsigned char value) {
 void Memory::m68kWrite(uint32_t location, unsigned short value) {
     m68kWrite(location, (unsigned char)(value >> 8));
     m68kWrite(location + 1, (unsigned char)(value & 0xFF));
+}
+
+void Memory::m68kWrite(uint32_t location, uint32_t value) {
+    m68kWrite(location, (unsigned char)(value >> 24));
+    m68kWrite(location + 1, (unsigned char)(value >> 16));
+    m68kWrite(location + 2, (unsigned char)(value >> 8));
+    m68kWrite(location + 3, (unsigned char)(value & 0xFF));
 }

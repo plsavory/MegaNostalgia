@@ -7,3 +7,7 @@ Useful resources:
 Sega Genesis ROM format - https://github.com/franckverrot/EmulationResources/blob/master/consoles/megadrive/genesis_rom.txt
 Sega Mega Drive 68k memory map - https://segaretro.org/Sega_Mega_Drive/Memory_map
 Z80 memory map - https://md.railgun.works/index.php?title=Zilog_Z80
+
+M68K information:
+https://www.cs.mcgill.ca/~cs573/fall2002/notes/lec273/lecture9/
+https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf

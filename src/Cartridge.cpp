@@ -165,7 +165,7 @@ void Cartridge::printROMInfo() {
 
 unsigned char Cartridge::read(unsigned long location) {
     // TODO add mapper handling code for the few games that apparently require it.
-    return location;
+    return rom[location];
 }
 
 void Cartridge::write(uint32_t location, unsigned char value) {

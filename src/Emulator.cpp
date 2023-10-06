@@ -17,6 +17,8 @@ Emulator::Emulator() {
 }
 void Emulator::init(const std::string &romFileName) {
     cartridge->loadROM(romFileName);
+    m68k->reset();
+    z80->reset(); // TODO turn the Z80 off when we are executing it, the program needs to turn it on itself
 }
 
 void Emulator::run() {

@@ -89,6 +89,12 @@ public:
                                                                              message) {};
 };
 
+class M68KException : public GeneralException {
+public:
+    explicit M68KException(const std::string &message) : GeneralException(std::string("M68K Exception"),
+                                                                         message) {};
+};
+
 class VDPException : public GeneralException {
 public:
     explicit VDPException(const std::string &message) : GeneralException(std::string("Z80 Exception"),

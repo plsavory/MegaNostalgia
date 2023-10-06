@@ -20,9 +20,13 @@ public:
 
     static void setBit(int bit, bool val, unsigned short &variable);
 
+    static void setBit(int bit, bool val, uint32_t &variable);
+
     static bool testBit(int bit, const unsigned char variable);
 
     static bool testBit(int bit, const unsigned short variable);
+
+    static bool testBit(int bit, const uint32_t variable);
 
     static std::string getVersionString(bool verboseString);
 

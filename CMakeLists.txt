@@ -25,4 +25,7 @@ add_executable(${EXECUTABLE_NAME}
         src/CPUZ80ExtendedOpcodeHandlers.cpp
         src/CPUZ80BitOpcodeHandlers.cpp
         src/CPUZ80IndexOpcodeHandlers.cpp
-        src/CPUZ80IndexBitOpcodeHandlers.cpp)
+        src/CPUZ80IndexBitOpcodeHandlers.cpp
+        src/CPUM68kVectors.cpp
+        src/CPUM68kOpcodeHandlers.cpp
+        src/CPUM68kJumpTableSetup.cpp)
